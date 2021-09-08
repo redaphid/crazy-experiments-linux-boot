@@ -1,2 +1,3 @@
 #!/usr/bin/env fish
-docker run -it 7cec2cc3c697 /bin/bash 
+docker build --tag crazy-experiments-linux:builder -f ./docker/builder.Dockerfile .; or exit 1
+docker run -it crazy-experiments-linux:builder /usr/bin/fish

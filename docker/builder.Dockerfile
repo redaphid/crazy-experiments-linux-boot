@@ -1,6 +1,7 @@
 FROM amd64/debian:bullseye
 
 RUN apt-get -y update
+
 RUN apt-get -y install \
     dosfstools \
     extlinux \
@@ -16,3 +17,12 @@ RUN apt-get -y install \
     xorriso \    
     mtools \
     refind \
+;
+
+# developer tools
+RUN apt-get -y install \
+    fish \
+;
+
+RUN mkdir /project
+COPY ./scripts /project/scripts
