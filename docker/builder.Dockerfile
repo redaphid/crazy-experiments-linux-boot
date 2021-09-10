@@ -22,6 +22,7 @@ RUN apt-get -y install \
 # developer tools
 RUN apt-get -y install \
     fish \
+    tmux \
 ;
 
 RUN mkdir /project
