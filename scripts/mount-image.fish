@@ -5,4 +5,3 @@ losetup -D
 set IMG_LOOP (losetup -f)
 losetup -o (expr 512 \* 204) $IMG_LOOP  ./tmp/os.img
 mount -t auto $IMG_LOOP ./tmp/mnt/os
-cp ./config/grub.cfg ./tmp/mnt/os

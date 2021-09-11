@@ -8,5 +8,6 @@ echo $PWD
 docker run \
     --privileged \
     --mount type=bind,source=$PWD/scripts,target=/project/scripts \
+    --mount type=bind,source=$PWD/config,target=/project/config \
     --mount type=bind,source=$PWD/tmp,target=/project/tmp \
     -it crazy-experiments-linux:builder /usr/bin/env fish -c 'cd /project; and fish'
