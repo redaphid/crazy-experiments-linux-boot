@@ -1,2 +1,2 @@
 #!/usr/bin/env fish
-qemu-system-x86_64 -hda ./tmp/debian.img -m 2048 -smp cpus=4
+sudo qemu-system-x86_64 -hda ./tmp/os.img -m 4096 -bios /usr/share/OVMF/OVMF_CODE.fd -net none
