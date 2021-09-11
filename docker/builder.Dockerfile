@@ -26,4 +26,5 @@ RUN apt-get -y install \
 ;
 
 RUN mkdir /project
-COPY ./scripts /project/scripts
+COPY ./scripts /project
+COPY ./config /project
