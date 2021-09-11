@@ -4,4 +4,4 @@ echo $PWD
 docker run \
     --mount type=bind,source=$PWD/scripts,target=/project/scripts \
     --mount type=bind,source=$PWD/tmp,target=/project/tmp \
-    -it crazy-experiments-linux:builder /project/scripts/hello-world.fish   
+    -it crazy-experiments-linux:builder /usr/bin/env fish -c 'cd /project; and fish'

@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+set -l TMP '/project/tmp'
 mkdir -p ./tmp/mnt/os
 losetup -D
 set IMG_LOOP (losetup -f)
